@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Building a Blog with Hexo(1)]]></title>
+    <url>%2F2018%2F11%2F18%2FBuilding-a-Blog-with-Hexo-1%2F</url>
+    <content type="text"><![CDATA[How to Create a Blog with Hexo and GitHub Pages on macOS Sierra PrerequisitesBefore installing Hexo, Node.js and Git should be installed on your Mac. Please follow setup guides on their official websites. Installing and Initializing HexoNow, Hexo can be installed with npm. 1$ sudo npm install -g hexo Then, initialize Hexo. Here XXX is the directory for your blog. 1$ hexo init XXX Next, move to the directory. 1$ cd XXX Then, run the installation command. 1$ npm install Next, start the server. 1$ hexo server Now, open http://localhost:4000 in your browser. Hello World!. Hosting on Your GitHub AccountNow, create a new repository named YOURUSERNAME.github.io on GitHub, replaceing YOURUSERNAME with your GitHub username. Then, add lines into _config.yml in XXX . 123456 # Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy: type: git repository: https://github.com/YOURUSERNAME/YOURUSERNAME.github.io.git branch: master Next, generate static files. 1$ hexo generate Then, deploy your blog.1$ hexo deploy If you meet ERROR Deployer not found: git, run the command below. 1$ npm install hexo-deployer-git --save Then, run generate and deploy commands again. 12$ hexo generate$ hexo deploy Now, open http://YOURUSERNAME.github.io in your browser. For me, it is https://tonyhniu.github.io]]></content>
+      <categories>
+        <category>Tech</category>
+      </categories>
+      <tags>
+        <tag>Blog</tag>
+        <tag>Github</tag>
+        <tag>Hexo</tag>
+        <tag>Next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[The Issue(1), Solved]]></title>
+    <url>%2F2018%2F11%2F17%2FThe-issue-1-solved%2F</url>
+    <content type="text"><![CDATA[This problem has been solved because the blog function can not be implemented due to a spelling error while creating the file. The function is restored after modification.]]></content>
+      <categories>
+        <category>Tech</category>
+      </categories>
+      <tags>
+        <tag>Blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[The Issues of Blog(1)]]></title>
+    <url>%2F2018%2F11%2F13%2FThe-issues-of-blog-1%2F</url>
+    <content type="text"><![CDATA[The “tag” and “categories” in the left menu bar of the blog can not jump to the page correctly. A 404 page appears and the file not found.]]></content>
+      <categories>
+        <category>Tech</category>
+      </categories>
+      <tags>
+        <tag>Blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[A New Brand is Coming]]></title>
+    <url>%2F2018%2F11%2F10%2FA-new-brand-is-coming%2F</url>
+    <content type="text"><![CDATA[The brand MI is landing on Sylvia Park, there were so many people visited the shop this morning, and I also went to the Sylvia park which is really really crowd.]]></content>
+      <categories>
+        <category>Daily Life</category>
+      </categories>
+      <tags>
+        <tag>Sylvia Park Shopping Centre</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[We Had a BBQ Lunch.]]></title>
+    <url>%2F2018%2F11%2F10%2Fwe-had-a-BBQ-lunch%2F</url>
+    <content type="text"><![CDATA[Today, the company held a BBQ at noon, we had a really good time, and everyone quite enjoy it.]]></content>
+      <categories>
+        <category>Daily Life</category>
+      </categories>
+      <tags>
+        <tag>Synnex</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F11%2F05%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+      <categories>
+        <category>Tech</category>
+      </categories>
+  </entry>
+</search>
