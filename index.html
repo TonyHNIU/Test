@@ -376,10 +376,14 @@
 
       
         
-          
-            <p><img src="/2018/12/03/Christmas-Parade-2018-Pics/IMG_1907.jpg" alt=""><br><img src="/2018/12/03/Christmas-Parade-2018-Pics/IMG_1903.jpg" alt=""> </p>
-
-          
+          <p><img src="/2018/12/03/Christmas-Parade-2018-Pics/IMG_1907.jpg" alt=""><br></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/12/03/Christmas-Parade-2018-Pics/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -518,10 +522,14 @@
 
       
         
-          
-            <p>There was a big Christmas parade on Queen street yesterday, which was actually supposed to take place earlier than now, but it was postponed because of heavy rain on Sunday.</p>
-
-          
+          <p>There was a big Christmas parade on Queen street yesterday, which was actually supposed to take place earlier than now, but it was postponed because of heavy rain on Sunday.<br></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/12/03/Christmas-Parade-2018/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -660,34 +668,17 @@
 
       
         
-          
-            <p>How to Create a Blog with Hexo and GitHub Pages on macOS Sierra</p>
+          <p>How to Create a Blog with Hexo and GitHub Pages on macOS Sierra</p>
 <h2 id="Prerequisites"><a href="#Prerequisites" class="headerlink" title="Prerequisites"></a>Prerequisites</h2><p>Before installing Hexo, <a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a> and <a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a> should be installed on your Mac. Please follow setup guides on their official websites.</p>
 <h2 id="Installing-and-Initializing-Hexo"><a href="#Installing-and-Initializing-Hexo" class="headerlink" title="Installing and Initializing Hexo"></a>Installing and Initializing Hexo</h2><p>Now, Hexo can be installed with <font color="#dd0000">npm</font>.<br></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install -g hexo</span><br></pre></td></tr></table></figure>
-<p>Then, initialize Hexo. Here XXX is the directory for your blog.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init XXX</span><br></pre></td></tr></table></figure>
-<p>Next, move to the directory.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> XXX</span><br></pre></td></tr></table></figure>
-<p>Then, run the installation command.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-<p>Next, start the server.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>Now, open <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> in your browser.</p>
-<p><font color="#dd0000">Hello World!</font>.</p>
-<h2 id="Hosting-on-Your-GitHub-Account"><a href="#Hosting-on-Your-GitHub-Account" class="headerlink" title="Hosting on Your GitHub Account"></a>Hosting on Your GitHub Account</h2><p>Now, create a new repository named <font color="#dd0000">YOURUSERNAME.github.io</font> on GitHub, replaceing <font color="#dd0000">YOURUSERNAME</font> with your GitHub username.</p>
-<p>Then, add lines into <font color="#dd0000">_config.yml</font>  in <font color="#dd0000">XXX</font> .</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repository: https://github.com/YOURUSERNAME/YOURUSERNAME.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<p>Next, generate static files.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>Then, deploy your blog.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></p>
-<p>If you meet <font color="#dd0000">ERROR Deployer not found: git</font>, run the command below.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<p>Then, run generate and deploy commands again.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>Now, open <font color="#dd0000"><a href="http://YOURUSERNAME.github.io" target="_blank" rel="noopener">http://YOURUSERNAME.github.io</a></font> in your browser. For me, it is <a href="https://tonyhniu.github.io" target="_blank" rel="noopener">https://tonyhniu.github.io</a></p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/11/18/Building-a-Blog-with-Hexo-1/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -826,10 +817,14 @@
 
       
         
-          
-            <p>This problem has been solved because the blog function can not be implemented due to a spelling error while creating the file. The function is restored after modification.</p>
-
-          
+          <p>This problem has been solved because the blog function can not be implemented due to a spelling error while creating the file. The function is restored after modification.<br></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/11/17/The-issue-1-solved/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -968,10 +963,14 @@
 
       
         
-          
-            <p>The “tag” and “categories” in the left menu bar of the blog can not jump to the page correctly. A 404 page appears and the file not found.</p>
-
-          
+          <p>The “tag” and “categories” in the left menu bar of the blog can not jump to the page correctly. A 404 page appears and the file not found.<br></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/11/13/The-issues-of-blog-1/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1110,10 +1109,14 @@
 
       
         
-          
-            <p>The brand MI is landing on Sylvia Park, there were so many people visited the shop this morning, and I also went to the Sylvia park which is really really crowd.</p>
-
-          
+          <p>The brand MI is landing on Sylvia Park, there were so many people visited the shop this morning, and I also went to the Sylvia park which is really really crowd.<br></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/11/10/A-new-brand-is-coming/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1252,10 +1255,14 @@
 
       
         
-          
-            <p>Today, the company held a BBQ at noon, we had a really good time, and everyone quite enjoy it.</p>
-
-          
+          <p>Today, the company held a BBQ at noon, we had a really good time, and everyone quite enjoy it.<br></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/11/10/we-had-a-BBQ-lunch/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1394,18 +1401,16 @@
 
       
         
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a><br></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/11/05/hello-world/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
