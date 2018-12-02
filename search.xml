@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Christmas Parade 2018]]></title>
+    <url>%2F2018%2F12%2F03%2FChristmas-Parade-2018%2F</url>
+    <content type="text"><![CDATA[There was a big Christmas parade on Queen street yesterday, which was actually supposed to take place earlier than now, but it was postponed because of heavy rain on Sunday.]]></content>
+      <categories>
+        <category>Daily Life</category>
+      </categories>
+      <tags>
+        <tag>Christmas Parade</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Building a Blog with Hexo(1)]]></title>
     <url>%2F2018%2F11%2F18%2FBuilding-a-Blog-with-Hexo-1%2F</url>
     <content type="text"><![CDATA[How to Create a Blog with Hexo and GitHub Pages on macOS Sierra PrerequisitesBefore installing Hexo, Node.js and Git should be installed on your Mac. Please follow setup guides on their official websites. Installing and Initializing HexoNow, Hexo can be installed with npm. 1$ sudo npm install -g hexo Then, initialize Hexo. Here XXX is the directory for your blog. 1$ hexo init XXX Next, move to the directory. 1$ cd XXX Then, run the installation command. 1$ npm install Next, start the server. 1$ hexo server Now, open http://localhost:4000 in your browser. Hello World!. Hosting on Your GitHub AccountNow, create a new repository named YOURUSERNAME.github.io on GitHub, replaceing YOURUSERNAME with your GitHub username. Then, add lines into _config.yml in XXX . 123456 # Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy: type: git repository: https://github.com/YOURUSERNAME/YOURUSERNAME.github.io.git branch: master Next, generate static files. 1$ hexo generate Then, deploy your blog.1$ hexo deploy If you meet ERROR Deployer not found: git, run the command below. 1$ npm install hexo-deployer-git --save Then, run generate and deploy commands again. 12$ hexo generate$ hexo deploy Now, open http://YOURUSERNAME.github.io in your browser. For me, it is https://tonyhniu.github.io]]></content>
