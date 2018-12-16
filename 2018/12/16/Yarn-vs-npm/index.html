@@ -79,17 +79,20 @@
 
 
 
+<meta name="description" content="Since the original publish date of the article (January, 2017), a lot has changed for npm and yarn too. Most importantly, with the release of npm 5, package-lock.json was added to npm.">
 <meta name="keywords" content="Node package manager">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Yarn vs npm">
 <meta property="og:url" content="http://yoursite.com/2018/12/16/Yarn-vs-npm/index.html">
 <meta property="og:site_name" content="Tony Niu">
+<meta property="og:description" content="Since the original publish date of the article (January, 2017), a lot has changed for npm and yarn too. Most importantly, with the release of npm 5, package-lock.json was added to npm.">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://yoursite.com/2018/12/16/Yarn-vs-npm/images.png">
 <meta property="og:image" content="http://yoursite.com/2018/12/16/Yarn-vs-npm/download.png">
-<meta property="og:updated_time" content="2018-12-16T02:21:42.978Z">
+<meta property="og:updated_time" content="2018-12-16T02:24:35.017Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Yarn vs npm">
+<meta name="twitter:description" content="Since the original publish date of the article (January, 2017), a lot has changed for npm and yarn too. Most importantly, with the release of npm 5, package-lock.json was added to npm.">
 <meta name="twitter:image" content="http://yoursite.com/2018/12/16/Yarn-vs-npm/images.png">
 
 
@@ -374,9 +377,7 @@
       
 
       
-        <p><img src="/2018/12/16/Yarn-vs-npm/images.png" alt=""><br><a id="more"></a><br><img src="/2018/12/16/Yarn-vs-npm/download.png" alt=""><br><!-- more --><br>Since the original publish date of the article (January, 2017), a lot has changed for npm and yarn too. Most importantly, with the release of npm 5, package-lock.json was added to npm.</p>
-<p>package-lock.json is automatically generated and updated for any operations where the npm cli modifies the node_modules directory, or the package.json file. In addition to that, every “<code>npm install</code>“ automatically adds installed modules to both “<code>package.json</code>“ and “<code>package-lock.json</code>“ This file is meant to be committed into the version control you are using. With this feature, npm got feature parity with yarn, when it comes to lock file support.</p>
-<p>At the same time, yarn started to address issues that companies using mono repositories ran into. Namingly, monorepos with multiple packages, each containing a “<code>package.json</code>“ file. If you’d like to install dependencies for all of them with npm, that would include going over each directory and issuing “<code>npm install</code>“ in all of them.</p>
+        <p>Since the original publish date of the article (January, 2017), a lot has changed for npm and yarn too. Most importantly, with the release of npm 5, package-lock.json was added to npm.<br><img src="/2018/12/16/Yarn-vs-npm/images.png" alt=""><br><a id="more"></a><br>package-lock.json is automatically generated and updated for any operations where the npm cli modifies the node_modules directory, or the package.json file. In addition to that, every “<code>npm install</code>“ automatically adds installed modules to both “<code>package.json</code>“ and “<code>package-lock.json</code>“ This file is meant to be committed into the version control you are using. With this feature, npm got feature parity with yarn, when it comes to lock file support.<br><img src="/2018/12/16/Yarn-vs-npm/download.png" alt=""><br><!-- more --><br>At the same time, yarn started to address issues that companies using mono repositories ran into. Namingly, monorepos with multiple packages, each containing a “<code>package.json</code>“ file. If you’d like to install dependencies for all of them with npm, that would include going over each directory and issuing “<code>npm install</code>“ in all of them.</p>
 <p>To help with this process, yarn introduced workspaces. In combination with Lerna, it gives package authors a powerful toolset to manage the dependencies and of projects and also enables publishing to be a lot easier.</p>
 
       
